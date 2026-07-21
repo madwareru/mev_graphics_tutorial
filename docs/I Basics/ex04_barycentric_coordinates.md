@@ -7,6 +7,8 @@
 > vertices. We'll use this to smoothly interpolate colors across the surface
 > of a triangle, producing a classic RGB gradient triangle.
 
+![Barycentric Coordinates](ex04_barycentric_coordinates.png)
+
 ---
 
 ## What We Are Doing

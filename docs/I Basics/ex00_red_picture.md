@@ -6,6 +6,8 @@
 > output the image to the terminal in PPM format. This is the simplest example —
 > but it's where the foundation for everything else is laid.
 
+![Red Picture](ex00_red_picture.png)
+
 ---
 
 ## What We Are Doing

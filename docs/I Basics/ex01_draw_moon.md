@@ -6,6 +6,8 @@
 > and a ground plane. We'll learn how to draw basic shapes — circles and
 > rectangles — by testing individual pixels against geometric formulas.
 
+![Draw a Moon](ex01_draw_moon.png)
+
 ---
 
 ## What We Are Doing

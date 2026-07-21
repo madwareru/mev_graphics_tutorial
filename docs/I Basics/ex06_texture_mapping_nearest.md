@@ -8,6 +8,8 @@
 > into integer texel indices and pick the closest texel. The result will have
 > a blocky, pixel-art look that reveals the discrete nature of the texture.
 
+![Texture Mapping — Nearest Neighbor](ex06_texture_mapping_nearest.png)
+
 ---
 
 ## What We Are Doing

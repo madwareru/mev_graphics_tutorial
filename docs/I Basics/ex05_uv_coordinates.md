@@ -8,6 +8,8 @@
 > assign a unique `(u, v)` pair to every pixel. We'll visualize them as
 > colors to build intuition before applying real textures in the next lessons.
 
+![UV Coordinates](ex05_uv_coordinates.png)
+
 ---
 
 ## What We Are Doing

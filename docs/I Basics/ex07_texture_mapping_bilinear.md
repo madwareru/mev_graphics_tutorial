@@ -7,6 +7,8 @@
 > between the four texels surrounding the sampling point. The result is a
 > smooth, softened image without the blocky pixel-art look of nearest neighbor.
 
+![Texture Mapping — Bilinear Interpolation](ex07_texture_mapping_bilinear.png)
+
 ---
 
 ## What We Are Doing

@@ -8,6 +8,8 @@
 > where each triangle **inverts** the pixels it covers. The shape emerges
 > naturally from the even-odd rule.
 
+![Winding Trick for Vector Shapes](ex03_winding_trick_for_shapes.png)
+
 ---
 
 ## What We Are Doing

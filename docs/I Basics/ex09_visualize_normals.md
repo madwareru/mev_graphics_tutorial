@@ -6,7 +6,9 @@
 > Instead of sampling a texture, we map each vertex normal — a 3D direction
 > vector — to an RGB color. This produces a vivid "normal map" view of the
 > model that reveals the orientation of every surface, building intuition for
-> the lighting calculations in the next lesson.
+> for the lighting calculations in the next lesson.
+
+![Visualizing Normals](ex09_visualize_normals.png)
 
 ---
 

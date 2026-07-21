@@ -7,6 +7,8 @@
 > This is a classic algorithm from computational geometry that generalizes to
 > arbitrary polygons — not just triangles.
 
+![Winding Number Triangle](ex02_winding_number_triangle.png)
+
 ---
 
 ## What We Are Doing

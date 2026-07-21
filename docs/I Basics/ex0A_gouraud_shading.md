@@ -8,6 +8,8 @@
 > appear three-dimensional with illuminated highlights and dark shadows,
 > revealing its surface curvature in a natural way.
 
+![Gouraud Shading](ex0A_gouraud_shading.png)
+
 ---
 
 ## What We Are Doing

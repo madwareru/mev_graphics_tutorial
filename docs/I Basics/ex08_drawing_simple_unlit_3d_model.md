@@ -8,6 +8,8 @@
 > bilinear filtering — all rendered with a programmable **vertex/pixel shader**
 > pipeline running entirely in software.
 
+![Drawing a Simple Unlit 3D Model](ex08_drawing_simple_unlit_3d_model.png)
+
 ---
 
 ## What We Are Doing

@@ -9,6 +9,8 @@
 > specular highlights and sharp shadow boundaries that fall inside a single
 > triangle.
 
+![Phong Shading](ex0B_phong_shading.png)
+
 ---
 
 ## What We Are Doing
