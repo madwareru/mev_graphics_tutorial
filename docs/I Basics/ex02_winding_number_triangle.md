@@ -459,3 +459,45 @@ of the triangle. For a triangle with a bounding box of `W × H` pixels, how
 many edge tests are performed in total? How does this compare to the circle
 algorithm from the previous lesson? Can you think of a way to reduce the
 number of tests?
+
+### Exercise 5: General polygon rendering and the star
+
+The `winding_n` method works for any polygon, not just triangles. The only
+triangle-specific part is the `lines()` call, which returns exactly three
+edges. For a general polygon, you'd need to provide an arbitrary list of
+edges.
+
+**Task A:** Write a generic `draw_polygon` method on `SoftwareBuffer` that
+accepts a slice of `Line` segments and a `PixelDrawingCommand`:
+
+```rust
+pub fn draw_polygon(
+    &mut self,
+    lines: &[Line],
+    command: &impl PixelDrawingCommand
+)
+```
+
+The method should compute the bounding box from all line endpoints, then
+use the same winding number logic as `draw_triangle`, but iterate over all
+the provided edges instead of the three fixed edges of a triangle.
+
+**Task B:** Define a `Polygon` struct that stores a list of `Point` vertices
+and has a `lines()` method (like `Triangle` does). Then use it to draw a
+five-pointed star. The vertices of a regular five-pointed star can be
+computed by alternating between two radii:
+
+```
+for i in 0..10 {
+    angle = i * π / 5  (or i * 36°)
+    radius = if i % 2 == 0 { outer_radius } else { inner_radius }
+    x = center_x + radius * cos(angle)
+    y = center_y + radius * sin(angle)
+}
+```
+
+Place the star at the center of the image with a comfortable size.
+
+**Question:** After drawing the star, you'll notice that the **center**
+(inner pentagon) is **not filled** — it shows the background color instead.
+Why does this happen?
