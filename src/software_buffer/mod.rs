@@ -10,6 +10,7 @@ pub mod ex07_texture_mapping_bilinear;
 pub mod ex08_drawing_simple_unlit_3d_model;
 pub mod ex09_visualize_normals;
 pub mod ex0a_gouraud_shading;
+pub mod ex0b_phong_shading;
 
 #[derive(Copy, Clone, Debug, Default, PartialEq, Eq)]
 pub struct Color24 {

@@ -10,6 +10,7 @@ declare -a arr=(
   "ex08_drawing_simple_unlit_3d_model"
   "ex09_visualize_normals"
   "ex0A_gouraud_shading"
+  "ex0B_phong_shading"
   "ex11_mev_clear"
 )
 for i in "${arr[@]}"

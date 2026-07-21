@@ -190,7 +190,7 @@ impl ObjModel {
                         let vn = source_vns[vn_triangle[i] as usize];
                         vs.push(glam::vec4(v.0, v.1, v.2, 1.0));
                         vts.push(glam::vec2(vt.0, vt.1));
-                        vns.push(glam::vec4(vn.0, vn.1, vn.2, 0.0));
+                        vns.push(glam::vec4(vn.0, vn.1, vn.2, 0.0).normalize_or_zero());
                         let idx = mapper.len() as u16;
                         mapper.insert(lookup_id, idx);
                         idx
