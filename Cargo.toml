@@ -1,0 +1,11 @@
+[package]
+name = "mev_graphics_tutorial"
+version = "0.1.0"
+edition = "2024"
+authors = ["Vitaly Samotokin"]
+license = "MIT"
+
+[dependencies]
+mev = { git = "https://github.com/zakarumych/mev.git", rev = "c72880e5d17c3467372deeb5b0aa8f5458a6efb4" }
+glam = "0.33.2"
+image = "0.25.10"
