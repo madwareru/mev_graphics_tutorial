@@ -107,6 +107,13 @@ The list of lessons is as follows:
 
     This lesson introduces the concept of Gouraud shading and shows how to 
     write a shader that draws a model with a basic lighting.
+  
+  + **[ex0B_phong_shading](./docs/I%20Basics/ex0B_phong_shading.md)**
+    
+    This lesson introduces the concept of Phong shading, which is basically a
+    Gouraud shading but in a pixel shader stage and shows how to 
+    write a shader that draws a model with smoother looking lighting.
+  
 - **docs/II MEV basics/**
   
   + **[ex10_mev_device_creation](./docs/II%20MEV%20basics/ex10_mev_device_creation.md)**
