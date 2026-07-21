@@ -419,13 +419,11 @@ After barycentric interpolation, the normal is no longer unit length. Add a
 renormalization step in the pixel shader before converting to color:
 
 ```rust
-let n = vertex_input.normal;
-let length = (n.x * n.x + n.y * n.y + n.z * n.z).sqrt();
-let n = if length > 0.0 {
-    glam::Vec4::new(n.x / length, n.y / length, n.z / length, n.w)
-} else {
-    n
-};
+let normal = vertex_input.normal.normalize_or_zero();
+
+let r = ((normal.x + 1.0) / 2.0 * 255.0).round().clamp(0.0, 255.0) as u8;
+let g = ((normal.y + 1.0) / 2.0 * 255.0).round().clamp(0.0, 255.0) as u8;
+let b = ((normal.z + 1.0) / 2.0 * 255.0).round().clamp(0.0, 255.0) as u8;
 ```
 
 Compare the result with and without renormalization. The colors should be
