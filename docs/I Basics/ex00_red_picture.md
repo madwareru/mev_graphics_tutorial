@@ -342,3 +342,23 @@ In this lesson we learned about:
 This is the basic building block. In the following lessons we will learn to
 draw shapes on this buffer — starting with a circle (moon) in lesson
 `ex01_draw_moon`.
+
+---
+
+## Exercises
+
+### Exercise 1: Out-of-bounds pixel write
+
+Take the example from this lesson and try drawing a single pixel at a fixed
+position *after* the clear, like this:
+
+```rust
+buffer.set_pixel(700, 0, Color24 { r: 255, g: 255, b: 255 });
+```
+
+**Question:** Why does this call, instead of doing nothing, result in a 
+white pixel being drawn somewhere inside the image?
+
+### Exercise 2: Safer `set_pixel` and `get_pixel`
+Rewrite `set_pixel` and `get_pixel` methods to ensure that they aren't 
+let the caller read or write from unexpected locations of the buffer.
