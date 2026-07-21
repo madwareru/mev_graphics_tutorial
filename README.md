@@ -22,15 +22,23 @@ Gradually, by the course of the tutorial, the user will create a game
 library similar to Raylib and will be able to make actual games with it.
 
 ## The list of lessons
-> You can find the results of lesson executions in the pictures folder. Most
-> of the pictures are in PPM format, so it's impossible to draw then in this
-> document, sadly. To see them, you need to use a PPM viewer, which is usually
-> available in the operating system, so it's yet another reason to check out the 
-> repository and do the experiments. 
-> 
-> You can also run the shell script `run_all_examples.sh` to run all the examples
-> and regenerate the pictures. This could be useful if you want to make modifications
-> to the examples and want to see the results.
+> Disclaimer:
+> > The approach on the writing of this tutorial series is the following:
+> > 1. The author implements example programs that show how to do 
+> > something. This process is done by hand to ensure that the code 
+> > is easy to understand and not bloated with unnecessary stuff.
+> > 2. The LLM is then asked to explain the code of an example in lesson 
+> > file inside a `/docs` folder. Then the author does some minor review 
+> > of what was said by the LLM. If the explanation is not concise, the
+> > author does some minor tweaks to the explanation and then the lesson
+> > is considered done.
+> > 3. If you feel that the quality of the explanation is not good enough,
+> > you are welcome to make a pull request with a better explanation. So we
+> > will take the best of two worlds: the author of this tutorial series
+> > will be able to get the good enough explanations faster, and you, fellow 
+> > readers, will be able to improve these explanations, and the tutorial will
+> > gradually become better. And anyone who was participating will be also
+> > mentioned as the rightful contributor of the lesson.
 
 The list of lessons is as follows:
 - **docs/I Basics/**

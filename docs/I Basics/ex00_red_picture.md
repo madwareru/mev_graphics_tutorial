@@ -1,5 +1,3 @@
-TODO: rewrite this neuro slop
-
 # Lesson 0: Red Picture
 
 > **Result:** `pictures/ex00_red_picture.ppm`
