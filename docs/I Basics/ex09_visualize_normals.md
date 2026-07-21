@@ -430,6 +430,22 @@ Compare the result with and without renormalization. The colors should be
 slightly more saturated and consistent with renormalization. Why does this
 matter for lighting?
 
+But there's a subtlety: the model matrix in this example scales the dragon by
+2× in all axes. When the normal is multiplied by `self.model_matrix` in the
+vertex shader, its length **doubles** — so the normals arriving at the pixel
+shader are already too long before interpolation even happens. To fix this at
+the source, add a normalization in the **vertex shader** as well:
+
+```rust
+let normal = (self.model_matrix * input.normal).normalize_or_zero();
+```
+
+This ensures each vertex normal is unit length before interpolation. With both
+the vertex-shader normalization and the pixel-shader renormalization in place,
+the colors will be fully correct. Compare all three versions — no
+normalization, vertex-only, and vertex + pixel — to see how the scaling
+affects the color intensity.
+
 ### Exercise 5: View-space normals
 
 Modify the vertex shader to transform normals by `view_matrix * model_matrix`
