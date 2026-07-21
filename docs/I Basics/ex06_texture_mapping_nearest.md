@@ -1,4 +1,4 @@
-# Lesson 6: Texture Mapping — Nearest Neighbor
+# Lesson I.6: Texture Mapping — Nearest Neighbor
 
 > **Result:** `pictures/ex06_texture_mapping_nearest.ppm`
 >

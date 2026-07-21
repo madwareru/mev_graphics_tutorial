@@ -1,4 +1,4 @@
-# Lesson 10: Gouraud Shading
+# Lesson I.10: Gouraud Shading
 
 > **Result:** `pictures/ex0A_gouraud_shading.ppm`
 >
@@ -137,7 +137,7 @@ all three fields — position, UV, and color — across the triangle.
 impl<'a> VertexShader for DrawGouraudShadedModelShader<'a> {
     type Output = GouraudSharedShaderData;
     fn transform_vertices(&self, input: VertexShaderData) -> GouraudSharedShaderData {
-        let normal = self.model_matrix * input.normal;
+        let normal = (self.model_matrix * input.normal).normalize_or_zero();
         let position = (self.proj_matrix * self.view_matrix * self.model_matrix) * input.position;
         let reversed_light_dir = -self.light_direction;
         let attenuation = normal.dot(reversed_light_dir).max(0.0);
@@ -150,8 +150,13 @@ impl<'a> VertexShader for DrawGouraudShadedModelShader<'a> {
 
 Step by step:
 
-1. **Transform the normal** — `self.model_matrix * input.normal` brings the
-   vertex normal into world space (same as lesson 9).
+1. **Transform and normalize the normal** — `self.model_matrix * input.normal`
+   brings the vertex normal into world space (same as lesson 9). We then
+   **normalize** the result with `.normalize_or_zero()`. The model matrix can
+   change the normal's length (especially with scaling), and the dot product
+   `n · l` requires a unit-length normal to produce a correct cosine value.
+   Normalizing here — once per vertex — is cheaper than normalizing per pixel
+   in the pixel shader.
 
 2. **Transform the position** — the full MVP matrix converts the vertex to
    clip space (same as lesson 8).

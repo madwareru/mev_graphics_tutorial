@@ -1,4 +1,4 @@
-# Lesson 0: Red Picture
+# Lesson I.0: Red Picture
 
 > **Result:** `pictures/ex00_red_picture.ppm`
 >

@@ -17,7 +17,7 @@ impl<'a> VertexShader for DrawPhongShadedModelShader<'a> {
     type Output = VertexShaderData;
     fn transform_vertices(&self, input: VertexShaderData) -> VertexShaderData {
         let position = (self.proj_matrix * self.view_matrix * self.model_matrix) * input.position;
-        let normal = self.model_matrix * input.normal;
+        let normal = (self.model_matrix * input.normal).normalize_or_zero();
         VertexShaderData { position, normal, ..input }
     }
 }

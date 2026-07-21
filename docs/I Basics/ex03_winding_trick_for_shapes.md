@@ -1,4 +1,4 @@
-# Lesson 3: The Winding Trick for Vector Shapes
+# Lesson I.3: The Winding Trick for Vector Shapes
 
 > **Result:** `pictures/ex03_winding_trick_for_shapes.ppm`
 >

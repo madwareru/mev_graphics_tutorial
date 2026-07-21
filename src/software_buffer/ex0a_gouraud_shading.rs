@@ -52,7 +52,7 @@ pub struct DrawGouraudShadedModelShader<'a> {
 impl<'a> VertexShader for DrawGouraudShadedModelShader<'a> {
     type Output = GouraudSharedShaderData;
     fn transform_vertices(&self, input: VertexShaderData) -> GouraudSharedShaderData {
-        let normal = self.model_matrix * input.normal;
+        let normal = (self.model_matrix * input.normal).normalize_or_zero();
         let position = (self.proj_matrix * self.view_matrix * self.model_matrix) * input.position;
         let reversed_light_dir = -self.light_direction;
         let attenuation = normal.dot(reversed_light_dir).max(0.0);

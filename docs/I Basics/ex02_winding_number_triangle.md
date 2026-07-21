@@ -1,4 +1,4 @@
-# Lesson 2: Winding Number Triangle
+# Lesson I.2: Winding Number Triangle
 
 > **Result:** `pictures/ex02_winding_number_triangle.ppm`
 >

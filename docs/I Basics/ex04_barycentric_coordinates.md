@@ -1,4 +1,4 @@
-# Lesson 4: Barycentric Coordinates
+# Lesson I.4: Barycentric Coordinates
 
 > **Result:** `pictures/ex04_barycentric_coordinates.ppm`
 >

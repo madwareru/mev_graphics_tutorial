@@ -1,4 +1,4 @@
-# Lesson 8: Drawing a Simple Unlit 3D Model
+# Lesson I.8: Drawing a Simple Unlit 3D Model
 
 > **Result:** `pictures/ex08_drawing_simple_unlit_3d_model.ppm`
 >

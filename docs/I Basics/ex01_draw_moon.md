@@ -1,4 +1,4 @@
-# Lesson 1: Draw a Moon
+# Lesson I.1: Draw a Moon
 
 > **Result:** `pictures/ex01_draw_moon.ppm`
 >

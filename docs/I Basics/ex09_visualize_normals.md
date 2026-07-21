@@ -1,4 +1,4 @@
-# Lesson 9: Visualizing Normals
+# Lesson I.9: Visualizing Normals
 
 > **Result:** `pictures/ex09_visualize_normals.ppm`
 >

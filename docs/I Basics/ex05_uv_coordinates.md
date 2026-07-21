@@ -1,4 +1,4 @@
-# Lesson 5: UV Coordinates
+# Lesson I.5: UV Coordinates
 
 > **Result:** `pictures/ex05_uv_coordinates.ppm`
 >

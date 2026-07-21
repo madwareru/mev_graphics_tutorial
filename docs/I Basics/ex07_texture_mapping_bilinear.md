@@ -1,4 +1,4 @@
-# Lesson 7: Texture Mapping — Bilinear Interpolation
+# Lesson I.7: Texture Mapping — Bilinear Interpolation
 
 > **Result:** `pictures/ex07_texture_mapping_bilinear.ppm`
 >
