@@ -54,7 +54,7 @@ impl<'a> VertexShader for DrawGouraudShadedModelShader<'a> {
     fn transform_vertices(&self, input: VertexShaderData) -> GouraudSharedShaderData {
         let normal = (self.model_matrix * input.normal).normalize_or_zero();
         let position = (self.proj_matrix * self.view_matrix * self.model_matrix) * input.position;
-        let reversed_light_dir = -self.light_direction;
+        let reversed_light_dir = (-self.light_direction).normalize_or_zero();
         let attenuation = normal.dot(reversed_light_dir).max(0.0);
         let color = (self.ambient_color + self.light_color * attenuation).clamp(glam::Vec3::ZERO, glam::Vec3::ONE);
         GouraudSharedShaderData { position, tex_coord: input.tex_coord, color }

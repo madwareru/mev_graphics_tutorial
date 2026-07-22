@@ -44,49 +44,67 @@ The list of lessons is as follows:
 - **docs/I Basics/**
   
   + **[ex00_red_picture](./docs/I%20Basics/ex00_red_picture.md)**
-
+    
+    <img src="./docs/I%20Basics/ex00_red_picture.png" alt="drawing" width="160"/>
+    
     Features the creation of a pixel buffer. Then this buffer is cleared with 
     a red color and drawn to the terminal using a PPM format.
   + **[ex01_draw_moon](./docs/I%20Basics/ex01_draw_moon.md)**
-  
+    
+    <img src="./docs/I%20Basics/ex01_draw_moon.png" alt="drawing" width="160"/>
+    
     Shows how to draw simple shapes on a screen sharing the same approach 
     with the usage of a pixel buffer and printing it to the terminal.
   + **[ex02_winding_number_triangle](./docs/I%20Basics/ex02_winding_number_triangle.md)**
-  
+    
+    <img src="./docs/I%20Basics/ex02_winding_number_triangle.png" alt="drawing" width="160"/>
+
     Shows how to draw a triangle using the winding number method.
 
   + **[ex03_winding_trick_for_shapes](./docs/I%20Basics/ex03_winding_trick_for_shapes.md)**
-
+    
+    <img src="./docs/I%20Basics/ex03_winding_trick_for_shapes.png" alt="drawing" width="160"/>
+    
     Shows a trick that can be used to draw complex vector shapes through 
     a sequence of triangle drawings, where each next triangle inverts the 
     picture, and after all the triangles are drawn, the user will see the 
     vector shape.
 
   + **[ex04_barycentric_coordinates](./docs/I%20Basics/ex04_barycentric_coordinates.md)**
-  
+    
+    <img src="./docs/I%20Basics/ex04_barycentric_coordinates.png" alt="drawing" width="160"/>
+    
     Introduces the concept of barycentric coordinates and shows how to use 
     them to interpolate the values inside a triangle using red, green and 
     blue colors as a simple example.
 
   + **[ex05_uv_coordinates](./docs/I%20Basics/ex05_uv_coordinates.md)**
-  
+    
+    <img src="./docs/I%20Basics/ex05_uv_coordinates.png" alt="drawing" width="160"/>
+    
     This lesson is a natural continuation of the previous one, where the 
     user will learn about UV coordinates and will draw a couple of triangles 
     with UV coordinates interpolated leveraging the barycentric coordinates.
 
   + **[ex06_texture_mapping_nearest](./docs/I%20Basics/ex06_texture_mapping_nearest.md)**
-  
+    
+    <img src="./docs/I%20Basics/ex06_texture_mapping_nearest.png" alt="drawing" width="160"/>
+    
     This lesson introduces the concept of texture mapping and shows how to 
     use it to draw a simple texture on a quad made of two triangles.
 
   + **[ex07_texture_mapping_bilinear](./docs/I%20Basics/ex07_texture_mapping_bilinear.md)**
-  
+    
+    <img src="./docs/I%20Basics/ex07_texture_mapping_bilinear.png" alt="drawing" width="160"/>
+    
     This lesson is a continuation of the previous one, where the user learns 
     how to get a more smooth texture by using bilinear interpolation instead 
     of choosing the nearest pixel in a texture.
 
   + **[ex08_drawing_simple_unlit_3d_model](./docs/I%20Basics/ex08_drawing_simple_unlit_3d_model.md)**
-  
+    
+    <img src="./docs/I%20Basics/ex08_drawing_simple_unlit_3d_model.png" alt="drawing" width="160"/>
+    
     This lesson introduces the concept of 3D models and shows how to draw 
     a simple unlit 3D model. The user will learn how to write a parser for 
     the Wavefront OBJ format and how to use it to load a 3D model. Then the 
@@ -96,7 +114,9 @@ The list of lessons is as follows:
     with a bilinear interpolation.
 
   + **[ex09_visualize_normals](./docs/I%20Basics/ex09_visualize_normals.md)**
-
+    
+    <img src="./docs/I%20Basics/ex09_visualize_normals.png" alt="drawing" width="160"/>
+    
     This lesson is a preparation before the explanation on how to add lighting. 
     The user will learn what normals are, how it is possible to calculate them in
     the case when the model is not provided with them. The concept of smooth and 
@@ -104,12 +124,16 @@ The list of lessons is as follows:
     write a shader that visualizes normals of a model.
 
   + **[ex0A_gouraud_shading](./docs/I%20Basics/ex0A_gouraud_shading.md)**
-
+    
+    <img src="./docs/I%20Basics/ex0A_gouraud_shading.png" alt="drawing" width="160"/>
+    
     This lesson introduces the concept of Gouraud shading and shows how to 
     write a shader that draws a model with a basic lighting.
   
   + **[ex0B_phong_shading](./docs/I%20Basics/ex0B_phong_shading.md)**
-    
+
+    <img src="./docs/I%20Basics/ex0B_phong_shading.png" alt="drawing" width="160"/>
+
     This lesson introduces the concept of Phong shading, which is basically a
     Gouraud shading but in a pixel shader stage and shows how to 
     write a shader that draws a model with smoother looking lighting.

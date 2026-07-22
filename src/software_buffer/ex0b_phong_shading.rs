@@ -39,7 +39,7 @@ impl <'a> PixelShader for DrawPhongShadedModelShader<'a> {
 
         let normal = vertex_input.normal;
         let normal = if normal.length_squared() > 1.0 { normal.normalize_or_zero() } else { normal };
-        let reversed_light_dir = -self.light_direction;
+        let reversed_light_dir = (-self.light_direction).normalize_or_zero();
         let attenuation = normal.dot(reversed_light_dir).max(0.0);
         let light_color = (self.ambient_color + self.light_color * attenuation).clamp(glam::Vec3::ZERO, glam::Vec3::ONE);
 
